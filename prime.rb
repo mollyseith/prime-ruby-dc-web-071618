@@ -13,4 +13,3 @@ def prime?(number)
   return bool
   end
 end
-
