@@ -1,22 +1,16 @@
 def prime?(number)
-  idx = 1
-	result = nil
-	counter = 0
-
-
-	while idx <= number
-	if number % idx == 0 
-		counter = counter + 1
-	end
-	idx = idx + 1
-	end
-
-	if counter > 2
-		result = false
-	else
-		result = true
-	end
-
-	return result
-
+#create array 2 through number 
+#iterate through, if 
+  start = 0
+  bool = false
+  a=*(2..number-1)
+  loop do
+    if number % a[start] != 0
+      start += 1
+    else
+      break
+      bool = true
+    end
+  return bool
+  end
 end
