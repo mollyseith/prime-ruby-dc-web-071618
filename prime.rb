@@ -12,9 +12,9 @@ def prime?(number)
 #    end
 #  return bool
 #  end
-  if n%2 !=0 && n!=2
-    puts "#{n} is prime!"
+  if number%2 !=0 && number!=2
+    return true
   else
-    puts "#{n} is not prime."
+    return false
   end
 end
